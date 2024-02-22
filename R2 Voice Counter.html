@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      background-image: linear-gradient(DodgerBlue, SlateBlue);
+    }
+
+    #counter {
+      font-size: 390px;
+      opacity: 0;
+      transition: opacity 1s;
+      color: #ccff66;
+    }
+
+    #startButton, #languageSelect {
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+  <title>Contador</title>
+</head>
+<body>
+  <div id="counter">1</div>
+  <button id="startButton" onclick="startCounter()">Iniciar Contador</button>
+  <select id="languageSelect" onchange="changeLanguage()">
+    <option value="es">Español</option>
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+  </select>
+
+  <script src="lavoz.js">
+ 
+  </script>
+</body>
+</html>
